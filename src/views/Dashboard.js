@@ -1,3 +1,3 @@
 export default function Dashboard(){
-    return "Nyanyinyunyenyo"
+    return (<div>Dashboard</div>)
 }
