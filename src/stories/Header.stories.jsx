@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Common/Header';
 
 export default {
-  title: 'Example/Header',
+  title: 'Common/Header',
   component: Header,
   parameters: {
     layout: 'fullscreen',

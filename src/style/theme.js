@@ -1,3 +1,4 @@
+import { grey } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -10,8 +11,14 @@ const theme = createTheme({
             main: '#78909c',
         },
         background: {
-            default: '#D5D8B5',
+            main: '#D5D8B5',
         },
+        white: {
+            main: grey['A200'],
+        },
+        grey: {
+            main: grey[800]
+        }
     },
 })
 
