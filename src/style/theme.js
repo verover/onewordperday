@@ -5,13 +5,14 @@ const theme = createTheme({
     palette: {
         type: 'light',
         primary: {
-            main: '#5F7161',
+            main: '#4f759b',
         },
         secondary: {
-            main: '#78909c',
+            main: '#92c9b1',
         },
         background: {
-            main: '#D5D8B5',
+            gradient: 'linear-gradient(45deg, #4f759b 30%, #92c9b1 90%)',
+            main: '#4f759b'
         },
         white: {
             main: grey['A200'],

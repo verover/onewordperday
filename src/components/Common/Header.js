@@ -4,7 +4,7 @@ import AutoAwesomeTwoToneIcon from '@mui/icons-material/AutoAwesomeTwoTone';
 
 export default function Header(props) {
   return (
-    <AppBar color={"transparent"} elevation={0} position="static" sx={{ flexGrow: 1 }}>
+    <AppBar color={"transparent"} elevation={0} position="fixed" sx={{ flexGrow: 1 }}>
       <Toolbar>
         <Box sx={{marginLeft: 'auto', colors: 'text.secondary'}} >
           <AutoAwesomeTwoToneIcon color="white" style={{ fontSize: '300%' }}/>
