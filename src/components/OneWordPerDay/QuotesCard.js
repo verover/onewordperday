@@ -1,7 +1,6 @@
-import { ExpandMore } from "@mui/icons-material";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Card, CardActions, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import Curved from "../Common/Text/Curved";
 
 const QuotesCard = ({
   id,
@@ -10,32 +9,44 @@ const QuotesCard = ({
   background,
   title,
   secondary,
-  label,
+  body,
   date,
-  type
+  type,
+  facing,
+  width = '100%'
 }) => {
   return (
-    <Box sx={{ width: '42%' }}>
-      <Card sx={{ boxShadow: 2, borderRadius: 3 }}>
-        <CardContent>
+    <Box sx={{ width: width, bgColor: background }}>
+      {/* Front
+      <Card sx={{ boxShadow: 2, borderRadius: 3, minHeight: 250 }}>
+        <CardContent textOverflow="ellipsis" overflow="hidden" nowrap>
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
             WORD OF THE DAY
           </Typography>
           <Typography variant="h5" component="div">
-            Overwhelmed
+            {title}
           </Typography>
           <Typography sx={{ mb: 0.5 }} color="text.secondary">
-            adjective
+            {secondary}
           </Typography>
-          <Typography variant="body2">
-            well meaning and kindly with a benevolent smile. well meaning and kindly with a benevolent smile. well meaning and kindly with a benevolent smile.
+          <Typography sx={{
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            display: "-webkit-box",
+            WebkitLineClamp: "5",
+            WebkitBoxOrient: "vertical",
+          }}>
+            {body}
           </Typography>
         </CardContent>
-        <CardActions sx={{ borderTop: 0.1, borderColor: 'primary.main', backgroundColor: 'secondary.main' }}>
-          <ExpandMore aria-label="show more">
-            <ExpandMoreIcon />
-          </ExpandMore>
-        </CardActions>
+      </Card> */}
+      {/* Back */}
+      <Card sx={{ boxShadow: 2, borderRadius: 3, height: [200, 280, 250, 500], bgcolor: 'background.gradient' }}>
+        <CardContent textOverflow="ellipsis" overflow="hidden" nowrap >
+          <Typography>
+            <Curved />
+          </Typography>
+        </CardContent>
       </Card>
     </Box>
   )
